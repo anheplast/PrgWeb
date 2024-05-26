@@ -1,0 +1,93 @@
+body {
+    background-color: #232928;
+    color: rgb(80, 12, 128);
+}
+
+:root {
+    --color-fahrenheit: #1e90ff;
+    --color-kelvin: #9400d3;
+    --color-rankine: #f28500;
+    --color-reaumur: #800000;
+    --color-text: white;
+}
+
+
+#primerResultado, #segundoResultado {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#contenedorTitulo {
+    background-image: url(../titulo-cover.jpg);
+}
+
+#fahrenheitPrimero, #fahrenheitSegundo {
+    background-color: var(--color-fahrenheit);
+    color: var(--color-text);
+}
+
+#kelvinPrimero, #kelvinSegundo {
+    background-color: var(--color-kelvin);
+    color: var(--color-text);
+}
+
+#rankinePrimero, #rankineSegundo {
+    background-color: var(--color-rankine);
+    color: var(--color-text);
+}
+
+#reaumurPrimero, #reaumurSegundo {
+    background-color: var(--color-reaumur);
+    color: var(--color-text);
+}
+
+#tg-contenedor-temperaturaUno, #tg-contenedor-temperaturaDos {
+    width: 250px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: -170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nombreTemperaturasPrimero, #nombreTemperaturasSegundo
+{
+    width: 200px;
+}
+
+
+
+#resultadoMultiplicado {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#iconTemperatura {
+    width: 25px;
+}

@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+}
+
+
+h1, h2, h4, h3, p, li {
+    color: white;
+}
+
+h1, h2, h4, h3, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul, ol {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.tg-titulo {
+    
+    font-size: 23px;
+    text-align: center;
+    color: white;
+}
+
+.tg-2titulo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #2D7F90;
+}
+
+.tg-imagen {
+    width: 280px;
+}
+
+.tg-texto {
+    color: blue;
+}
+

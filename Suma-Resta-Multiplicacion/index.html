@@ -1,0 +1,68 @@
+<!--Martin Mayanquer-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class2</title>
+    <script src="action.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Suma-Resta-Multiplicacion</h1>
+    </header>
+    <div>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Accion</th>
+                        <th>Numero</th>
+                        <th>Numero2</th>
+                        <th>Salida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Sumar:</th>
+                        <td><input id="numeroS1" type="number"></td>
+                        <td><input id="numeroS2" type="number"></td>
+                        <td> <label id="resultSum"></label></td>
+                        <td><button type="button" onclick="sumar()">Sumar</button></td>
+                    </tr>
+                    <tr>
+                        <th>Restar:</th>
+                        <td><input id="numeroR1" type="number"></td>
+                        <td><input id="numeroR2" type="number"></td>
+                        <td><label id="resultRes"></label></td>
+                        <td><button type="button" onclick="restar()">Restar</button></td>
+                    </tr>
+                    <tr>
+                        <th>Multiplicar:</th>
+                        <td></td>
+                        <td></td>
+                        <td><label id="resultMult" ></label></td>
+                        <td><button type="button" onclick="multiplicar()">Multiplicar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <form action="">
+                <b><label >Numero:</label></b>
+                <label> <input type="number" id="inputNumero"></label>
+                <br>
+                <br>
+                <button type="button" onclick="collatz()">Iniciar</button>
+                <br>
+                <br>
+                <div id="resultCollatz"></div>
+                <br>
+                <label id="esNegativo"></label>
+        </form>
+    </div>
+    <footer></footer>
+</body>
+
+</html>

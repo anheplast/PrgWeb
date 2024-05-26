@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperaturas</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!--JS-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script defer src="./js/conversor.js"></script>
+</head>
+
+<body>
+    <header class="text-center my-4">
+    <div id="contenedorTitulo">
+        <h1>DE CELSIUS A <span id="palabrasTemperaturas">TEMPERATURAS</span></h1>
+    </div>
+    </header>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <!--DROPDOWN PRIMER INPUT-->
+                <div class="dropdown mb-3">
+                    <button id="nombreTemperaturasPrimero" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Temperaturas
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a id="fahrenheitPrimero" class="dropdown-item" href="#">Fahrenheit (°F)</a></li>
+                        <li><a id="kelvinPrimero" class="dropdown-item" href="#">Kelvin (K)</a></li>
+                        <li><a id="rankinePrimero" class="dropdown-item" href="#">Rankine (°R)</a></li>
+                        <li><a id="reaumurPrimero" class="dropdown-item" href="#">Réaumur (°Re)</a></li>
+                    </ul>
+                </div>
+                <!--PRIMER INPUT-->
+                <div id="tg-contenedor-temperaturaUno" class="input-group mb-3">
+                    <input id="primeraTemperatura" type="number" class="form-control">
+                    <span class="input-group-text">°C</span>
+                </div>
+                <!--Resultado del primer dato-->
+                <p id="primerResultado"><img id="iconTemperatura" src="./temperature.png" alt="Temperatura.png"></p>
+            </div>
+            <div class="col-md-4">
+                <!--DROPDOWN SEGUNDO INPUT-->
+                <div class="dropdown mb-3">
+                    <button id="nombreTemperaturasSegundo" class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Temperaturas
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a id="fahrenheitSegundo" class="dropdown-item" href="#">Fahrenheit (°F)</a></li>
+                        <li><a id="kelvinSegundo" class="dropdown-item" href="#">Kelvin (K)</a></li>
+                        <li><a id="rankineSegundo" class="dropdown-item" href="#">Rankine (°R)</a></li>
+                        <li><a id="reaumurSegundo" class="dropdown-item" href="#">Réaumur (°Re)</a></li>
+                    </ul>
+                </div>
+                <!--SEGUNDO INPUT-->
+                <div id="tg-contenedor-temperaturaDos" class="input-group mb-3">
+                    <input id="segundaTemperatura" type="number" class="form-control">
+                    <span class="input-group-text">°C</span>
+                </div>
+                <!--Resultado del segundo dato-->
+                <p id="segundoResultado"><img id="iconTemperatura" src="./temperature.png" alt="Temperatura.png"></p>
+            </div>
+        </div>
+    </div>
+    <!--Resultado multiplicado-->
+    <p id="resultadoMultiplicado"></p>
+</body>
+<script>
+//Cambio de Palabras
+const temperaturasColores = {
+    FAHRENHEIT: getComputedStyle(document.documentElement).getPropertyValue('--color-fahrenheit'),
+    KELVIN: getComputedStyle(document.documentElement).getPropertyValue('--color-kelvin'),
+    RANKINE: getComputedStyle(document.documentElement).getPropertyValue('--color-rankine'),
+    REAUMUR: getComputedStyle(document.documentElement).getPropertyValue('--color-reaumur'),
+};
+
+let indice = 0;
+
+function cambioTitulo() {
+    const palabrasTemperaturas = ["FAHRENHEIT", "KELVIN", "RANKINE", "REAUMUR"];
+    const tituloElemento = document.getElementById('palabrasTemperaturas');
+
+    const temperaturaActual = palabrasTemperaturas[indice];
+    tituloElemento.innerHTML = temperaturaActual;
+    tituloElemento.style.color = temperaturasColores[temperaturaActual];
+
+    indice = (indice + 1) % palabrasTemperaturas.length;
+}
+
+setInterval(cambioTitulo, 5000);
+</script>
+
+</html>
