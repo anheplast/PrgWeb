@@ -1,72 +1,76 @@
-//Ficha Reina
-var UbicacionReina = 'fichaReina.png';
-var piezaReina = document.createElement('img');
-piezaReina.src = UbicacionReina;
-piezaReina.alt = 'Reina.png';
-piezaReina.width = 50;
-piezaReina.height = 50;
+// Variables globales
+var filaAlfil = -1;
+var columnaAlfil = -1;
+var tableroSize = 8; 
 
-
-generar = () => {
+// Función para generar el tablero
+function generar() {
     const tablero = document.getElementById("tablero");
     tablero.innerHTML = "";
-    let identificador = 0;
-    let idcasilla = 0;
 
-    //Variables de la posicion
-    let filaPosicion = parseFloat(document.getElementById('filaPosicion').value) - 1;
-    let columnaPosicion = parseFloat(document.getElementById('columnaPosicion').value) - 1;
+    // Obtener la posición del alfil
+    filaAlfil = parseInt(document.getElementById('filaPosicion').value) - 1;
+    columnaAlfil = parseInt(document.getElementById('columnaPosicion').value) - 1;
 
-    //Verificacion de las variables posicion
-    console.log(`Fila: ${filaPosicion}, Tipo -> ${typeof(filaPosicion)}`);
-    console.log(`Columna: ${columnaPosicion}, Tipo -> ${typeof(columnaPosicion)}`);
-    
-    
-
-    for (let fila = 0; fila < 5; fila++) {
+    for (let fila = 0; fila < tableroSize; fila++) {
         const filaElemento = document.createElement("tr");
-        
 
-        for (let columna = 0; columna < 5; columna++) {
+        for (let columna = 0; columna < tableroSize; columna++) {
             const casilla = document.createElement("td");
-
-            casilla.textContent = idcasilla;
-            
-            casilla.classList.add("Miclase");
-            casilla.setAttribute('id', idcasilla);
-        
-            filaElemento.appendChild(casilla);
-            
-            // PAR e IMPAR
-            if (identificador % 2 === 0) {
-                idcasilla++;
-                casilla.style.color = "#000000";
-                casilla.style.backgroundColor =  "#ffffff";
-            }
-            else
-            {
-                casilla.style.backgroundColor =  "#000000"; 
-            }
             casilla.classList.add("casilla");
+            casilla.setAttribute('data-fila', fila);
+            casilla.setAttribute('data-columna', columna);
 
-            //Posicion Imagen
-            if (fila === filaPosicion && columna === columnaPosicion)
-            {
-                casilla.innerHTML = "";
-                casilla.appendChild(piezaReina);
-            }
-            else
-            {
-                casilla.textContent = identificador;
+            // Determinar color de fondo (alternando colores)
+            if ((fila + columna) % 2 === 0) {
+                casilla.style.backgroundColor = "#ffffff"; // Casilla blanca
+            } else {
+                casilla.style.backgroundColor = "#000000"; // Casilla negra
             }
 
+            // Colocar imagen del alfil en la posición indicada
+            if (fila === filaAlfil && columna === columnaAlfil) {
+                const imgAlfil = document.createElement("img");
+                imgAlfil.src = "B_Alfil.png"; //ruta del alfil
+                imgAlfil.classList.add("alfil");
+                casilla.appendChild(imgAlfil);
+            }
 
-            identificador++;
-
-            
+            filaElemento.appendChild(casilla);
         }
+
         tablero.appendChild(filaElemento);
     }
-};
 
+    // PMovimientos válidos del alfil
+    pintarMovimientosValidos();
+}
 
+// Verificar si una casilla es un movimiento válido para el alfil
+function esMovimientoValido(fila, columna) {
+    // Calcula diferencia de posiciones
+    let diffFila = Math.abs(fila - filaAlfil);
+    let diffColumna = Math.abs(columna - columnaAlfil);
+
+    // Movimiento es válido 
+    return diffFila === diffColumna;
+}
+
+// Pinta los movimientos válidos del alfil
+function pintarMovimientosValidos() {
+    const casillas = document.querySelectorAll(".casilla");
+
+    casillas.forEach(casilla => {
+        let fila = parseInt(casilla.getAttribute('data-fila'));
+        let columna = parseInt(casilla.getAttribute('data-columna'));
+
+        if (esMovimientoValido(fila, columna)) {
+            casilla.style.backgroundColor = "yellow"; 
+        }
+    });
+}
+
+// Ejecuta generar() al cargar la página por primera vez
+document.addEventListener("DOMContentLoaded", function() {
+    generar();
+});

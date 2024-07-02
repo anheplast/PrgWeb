@@ -1,0 +1,38 @@
+body, html {
+    background-color: beige;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imagen-catalogo {
+    width: 200px; 
+    height: 200px; 
+    margin: 0 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.imagen-catalogo img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s; 
+}
+
+.imagen-catalogo img:hover {
+    transform: scale(1.1);
+}

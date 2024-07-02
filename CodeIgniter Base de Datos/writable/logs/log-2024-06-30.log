@@ -1,0 +1,542 @@
+ERROR - 2024-06-30 07:46:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'martin'@'localhost' (using password: YES) in /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('localhost', 'martin', 'martin', 'parcial2', 3306, '', 0)
+#1 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/parcial2/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/parcial2/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/parcial2/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/parcial2/app/Controllers/Home.php(16): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/parcial2/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/parcial2/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /opt/lampp/htdocs/parcial2/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/parcial2/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/parcial2/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/parcial2/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 /opt/lampp/htdocs/parcial2/app/Controllers/Home.php(16): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/parcial2/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/parcial2/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /opt/lampp/htdocs/parcial2/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-06-30 07:46:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_usuarios`', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Home.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-06-30 07:46:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'martin'@'localhost' (using password: YES) in /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('localhost', 'martin', 'martin', 'parcial2', 3306, '', 0)
+#1 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/parcial2/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/parcial2/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/parcial2/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/parcial2/app/Controllers/Home.php(16): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/parcial2/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/parcial2/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /opt/lampp/htdocs/parcial2/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/parcial2/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/parcial2/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/parcial2/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 /opt/lampp/htdocs/parcial2/app/Controllers/Home.php(16): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/parcial2/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /opt/lampp/htdocs/parcial2/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /opt/lampp/htdocs/parcial2/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-06-30 07:46:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_usuarios`', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Home.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:50:00 --> ErrorException: Undefined array key "rol_id"
+[Method: GET, Route: /]
+in APPPATH/Views/vista_usuarios.php on line 43.
+ 1 APPPATH/Views/vista_usuarios.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rol_id"', '/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php', 43)
+ 2 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('vista_usuarios', [], true)
+ 5 APPPATH/Controllers/Home.php(27): view('vista_usuarios', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:50:33 --> ErrorException: Undefined array key "rol_id"
+[Method: GET, Route: /]
+in APPPATH/Views/vista_usuarios.php on line 43.
+ 1 APPPATH/Views/vista_usuarios.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rol_id"', '/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php', 43)
+ 2 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('vista_usuarios', [], true)
+ 5 APPPATH/Controllers/Home.php(27): view('vista_usuarios', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:50:35 --> ErrorException: Undefined array key "rol_id"
+[Method: GET, Route: /]
+in APPPATH/Views/vista_usuarios.php on line 43.
+ 1 APPPATH/Views/vista_usuarios.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rol_id"', '/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php', 43)
+ 2 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('vista_usuarios', [], true)
+ 5 APPPATH/Controllers/Home.php(27): view('vista_usuarios', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:50:59 --> ErrorException: Undefined array key "rol_nombre"
+[Method: GET, Route: /]
+in APPPATH/Views/vista_usuarios.php on line 43.
+ 1 APPPATH/Views/vista_usuarios.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rol_nombre"', '/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php', 43)
+ 2 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('vista_usuarios', [], true)
+ 5 APPPATH/Controllers/Home.php(27): view('vista_usuarios', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:51:25 --> ErrorException: Undefined array key "rol_descripcion"
+[Method: GET, Route: /]
+in APPPATH/Views/vista_usuarios.php on line 41.
+ 1 APPPATH/Views/vista_usuarios.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rol_descripcion"', '/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php', 41)
+ 2 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('vista_usuarios', [], true)
+ 5 APPPATH/Controllers/Home.php(27): view('vista_usuarios', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:53:57 --> ErrorException: Undefined array key "rol_descripcion"
+[Method: GET, Route: /]
+in APPPATH/Views/vista_usuarios.php on line 41.
+ 1 APPPATH/Views/vista_usuarios.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rol_descripcion"', '/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php', 41)
+ 2 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('vista_usuarios', [], true)
+ 5 APPPATH/Controllers/Home.php(27): view('vista_usuarios', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:54:06 --> ErrorException: Undefined array key "rol_descripcion"
+[Method: GET, Route: /]
+in APPPATH/Views/vista_usuarios.php on line 41.
+ 1 APPPATH/Views/vista_usuarios.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rol_descripcion"', '/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php', 41)
+ 2 SYSTEMPATH/View/View.php(234): include('/opt/lampp/htdocs/parcial2/app/Views/vista_usuarios.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('vista_usuarios', [], true)
+ 5 APPPATH/Controllers/Home.php(27): view('vista_usuarios', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-06-30 07:54:52 --> mysqli_sql_exception: Unknown column 'tbl_usuarios.rol_id' in 'on clause' in /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tbl_usu...', 0)
+#1 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usu...')
+#2 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usu...')
+#3 /opt/lampp/htdocs/parcial2/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usu...', Array, false)
+#4 /opt/lampp/htdocs/parcial2/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/parcial2/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/parcial2/app/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/parcial2/app/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+#8 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#9 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/parcial2/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/parcial2/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /opt/lampp/htdocs/parcial2/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-06-30 07:54:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.*, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:54:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usuarios`.*, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usuarios`.*, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.*, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:54:52 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tbl_usuarios`.*, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usuarios`.*, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usuarios`.*, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.*, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-06-30 07:55:26 --> mysqli_sql_exception: Unknown column 'tbl_usuarios.rol_id' in 'on clause' in /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tbl_usu...', 0)
+#1 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usu...')
+#2 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usu...')
+#3 /opt/lampp/htdocs/parcial2/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usu...', Array, false)
+#4 /opt/lampp/htdocs/parcial2/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/parcial2/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/parcial2/app/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/parcial2/app/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+#8 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#9 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/parcial2/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/parcial2/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /opt/lampp/htdocs/parcial2/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-06-30 07:55:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:55:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:55:26 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-06-30 07:55:28 --> mysqli_sql_exception: Unknown column 'tbl_usuarios.rol_id' in 'on clause' in /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tbl_usu...', 0)
+#1 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usu...')
+#2 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usu...')
+#3 /opt/lampp/htdocs/parcial2/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usu...', Array, false)
+#4 /opt/lampp/htdocs/parcial2/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/parcial2/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/parcial2/app/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/parcial2/app/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+#8 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#9 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/parcial2/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/parcial2/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /opt/lampp/htdocs/parcial2/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-06-30 07:55:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:55:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:55:28 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-06-30 07:55:29 --> mysqli_sql_exception: Unknown column 'tbl_usuarios.rol_id' in 'on clause' in /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /opt/lampp/htdocs/parcial2/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tbl_usu...', 0)
+#1 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usu...')
+#2 /opt/lampp/htdocs/parcial2/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usu...')
+#3 /opt/lampp/htdocs/parcial2/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usu...', Array, false)
+#4 /opt/lampp/htdocs/parcial2/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/parcial2/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/parcial2/app/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/parcial2/app/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+#8 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#9 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/parcial2/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/parcial2/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/parcial2/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /opt/lampp/htdocs/parcial2/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-06-30 07:55:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:55:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 07:55:29 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_usuarios.rol_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_usuarios`.`usu_id`, `tbl_usuarios`.`usu_nombre`, `tbl_usuarios`.`usu_apellido`, `tbl_usuarios`.`usu_correo`, `tbl_roles`.`rol_descripcion`
+FROM `tbl_usuarios`
+LEFT JOIN `tbl_roles` ON `tbl_roles`.`rol_id` = `tbl_usuarios`.`rol_id`', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/UsuarioModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Home.php(13): App\Models\UsuarioModel->obtenerUsuariosConRoles()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 08:08:07 --> Error: Class "App\Models\UsuarioModel" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 08:08:22 --> Error: Class "App\Controllers\UsuarioModelo" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 08:08:58 --> Error: Class "App\Models\UsuarioModelo" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 08:09:00 --> Error: Class "App\Models\UsuarioModelo" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

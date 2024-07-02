@@ -1,0 +1,312 @@
+CRITICAL - 2024-06-30 00:11:59 --> Error: Class "App\Controllers\App" not found
+[Method: GET, Route: vestidos]
+in APPPATH\Controllers\Catalogo.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo('vestidos')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 00:12:03 --> Error: Class "App\Controllers\App" not found
+[Method: GET, Route: vestidos.php]
+in APPPATH\Controllers\Catalogo.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo('vestidos.php')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:07:07 --> ArgumentCountError: Too few arguments to function App\Controllers\Catalogo::catalogo(), 0 passed in C:\xampp\htdocs\manejo-rutas\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: /]
+in APPPATH\Controllers\Catalogo.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:08:08 --> ArgumentCountError: Too few arguments to function App\Controllers\Catalogo::catalogo(), 0 passed in C:\xampp\htdocs\manejo-rutas\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: /]
+in APPPATH\Controllers\Catalogo.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:08:36 --> Error: Class "App\Controllers\App" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Catalogo.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo('', '')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:09:31 --> ParseError: Unmatched '}'
+[Method: GET, Route: /]
+in APPPATH\Controllers\Catalogo.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\manejo-rutas\\app\\Controllers\\Catalogo.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Catalogo')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Catalogo')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Catalogo', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:09:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vestidos/indexvestidos.php"
+[Method: GET, Route: vestidos]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vestidos/indexvestidos.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('vestidos/indexvestidos', [], true)
+ 3 APPPATH\Controllers\Catalogo.php(28): view('vestidos/indexvestidos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo('vestidos')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:09:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vestidos/indexvestidos.php"
+[Method: GET, Route: vestidos/gala]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vestidos/indexvestidos.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('vestidos/indexvestidos', [], true)
+ 3 APPPATH\Controllers\Catalogo.php(28): view('vestidos/indexvestidos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo('vestidos', 'gala')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:42:12 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: zapatos/catZapatos]
+in APPPATH\Views\zapatos\catZapatos.php on line 83.
+ 1 APPPATH\Views\zapatos\catZapatos.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\catZapatos.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\catZapatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('zapatos/catZapatos.php', [], true)
+ 5 APPPATH\Controllers\Catalogo.php(34): view('zapatos/catZapatos.php')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->zapatos('catZapatos')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:43:34 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: zapatos/catZapatos]
+in APPPATH\Views\zapatos\catZapatos.php on line 97.
+ 1 APPPATH\Views\zapatos\catZapatos.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\catZapatos.php', 97)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\catZapatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('zapatos/catZapatos.php', [], true)
+ 5 APPPATH\Controllers\Catalogo.php(34): view('zapatos/catZapatos.php')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->zapatos('catZapatos')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:55:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "catalogo/catZapatos.php"
+[Method: GET, Route: zapatos]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('catalogo/catZapatos.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('catalogo/catZapatos', [], true)
+ 3 APPPATH\Controllers\Catalogo.php(16): view('catalogo/catZapatos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo('zapatos')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:56:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "catalogo/catZapatos.php"
+[Method: GET, Route: zapatos]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('catalogo/catZapatos.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('catalogo/catZapatos', [], true)
+ 3 APPPATH\Controllers\Catalogo.php(16): view('catalogo/catZapatos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo('zapatos')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:56:24 --> ArgumentCountError: Too few arguments to function App\Controllers\Catalogo::catalogo(), 0 passed in C:\xampp\htdocs\manejo-rutas\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: /]
+in APPPATH\Controllers\Catalogo.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:56:26 --> ArgumentCountError: Too few arguments to function App\Controllers\Catalogo::catalogo(), 0 passed in C:\xampp\htdocs\manejo-rutas\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: /]
+in APPPATH\Controllers\Catalogo.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->catalogo()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 02:58:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "catalogo/catZapatos.php"
+[Method: GET, Route: zapatos]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('catalogo/catZapatos.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('catalogo/catZapatos', [], true)
+ 3 APPPATH\Controllers\Catalogo.php(21): view('catalogo/catZapatos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalogo->categoria('zapatos')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 03:10:14 --> ParseError: Unmatched '}'
+[Method: GET, Route: /]
+in APPPATH\Controllers\Catalogo.php on line 67.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\manejo-rutas\\app\\Controllers\\Catalogo.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Catalogo')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Catalogo')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Catalogo', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 04:10:04 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "publicimg஬kground-zapatos.jpg"
+[Method: GET, Route: publicimg%E0%AE%ACkground-zapatos.jpg]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('publicimg஬kground-zapatos.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('publicimg஬kground-zapatos.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 04:10:06 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "publicimg஬kground-zapatos.jpg"
+[Method: GET, Route: publicimg%E0%AE%ACkground-zapatos.jpg]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('publicimg஬kground-zapatos.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('publicimg஬kground-zapatos.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 04:10:42 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "publicimg஬kground-zapatos.jpg"
+[Method: GET, Route: publicimg%E0%AE%ACkground-zapatos.jpg]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('publicimg஬kground-zapatos.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('publicimg஬kground-zapatos.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 04:10:46 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "publicimg஬kground-zapatos.jpg"
+[Method: GET, Route: publicimg%E0%AE%ACkground-zapatos.jpg]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('publicimg஬kground-zapatos.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('publicimg஬kground-zapatos.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 04:30:52 --> ErrorException: unlink(C:\xampp\htdocs\manejo-rutas\writable\debugbar/debugbar_1719721844.094495.json): No such file or directory
+[Method: GET, Route: /]
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\manejo-rutas\\writable\\debugbar/debugbar_1719721844.094495.json): No such file or directory', 'C:\\xampp\\htdocs\\manejo-rutas\\system\\Debug\\Toolbar\\Collectors\\History.php', 82)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(82): unlink('C:\\xampp\\htdocs\\manejo-rutas\\writable\\debugbar/debugbar_1719721844.094495.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(518): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1719721851.154951', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 05:05:33 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: zapatos/casuales]
+in APPPATH\Views\zapatos\casuales.php on line 83.
+ 1 APPPATH\Views\zapatos\casuales.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('zapatos/casuales', [], true)
+ 5 APPPATH\Controllers\Categorias.php(19): view('zapatos/casuales', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->categoriaZapatos('casuales')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 05:05:36 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: zapatos/casuales]
+in APPPATH\Views\zapatos\casuales.php on line 83.
+ 1 APPPATH\Views\zapatos\casuales.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('zapatos/casuales', [], true)
+ 5 APPPATH\Controllers\Categorias.php(19): view('zapatos/casuales', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->categoriaZapatos('casuales')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 05:05:37 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: zapatos/casuales]
+in APPPATH\Views\zapatos\casuales.php on line 83.
+ 1 APPPATH\Views\zapatos\casuales.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('zapatos/casuales', [], true)
+ 5 APPPATH\Controllers\Categorias.php(19): view('zapatos/casuales', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->categoriaZapatos('casuales')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 05:05:38 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: zapatos/casuales]
+in APPPATH\Views\zapatos\casuales.php on line 83.
+ 1 APPPATH\Views\zapatos\casuales.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('zapatos/casuales', [], true)
+ 5 APPPATH\Controllers\Categorias.php(19): view('zapatos/casuales', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->categoriaZapatos('casuales')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 05:05:40 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: zapatos/casuales]
+in APPPATH\Views\zapatos\casuales.php on line 83.
+ 1 APPPATH\Views\zapatos\casuales.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('zapatos/casuales', [], true)
+ 5 APPPATH\Controllers\Categorias.php(19): view('zapatos/casuales', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->categoriaZapatos('casuales')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-30 05:08:03 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: zapatos/casuales]
+in APPPATH\Views\zapatos\casuales.php on line 83.
+ 1 APPPATH\Views\zapatos\casuales.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\manejo-rutas\\app\\Views\\zapatos\\casuales.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('zapatos/casuales', [], true)
+ 5 APPPATH\Controllers\Categorias.php(19): view('zapatos/casuales', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->categoriaZapatos('casuales')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
