@@ -1,7 +1,5 @@
 # Manejo de Rutas
 
-**Autor:** Martin Mayanquer
-
 Para acceder a la vista de catálogo, la URL debe estar así:
 
 ## Catálogo General
