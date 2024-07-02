@@ -1,7 +1,5 @@
 # Parcial 2
 
-**Autor:** Martin Mayanquer
-
 Antes de iniciar, este es el script de la base de datos, hecho en phpMyAdmin:
 
 ```sql
@@ -131,5 +129,5 @@ http://localhost/parcial2/
 
 <details>
   <summary>Imagen de la página de contenido obtenido desde la base de datos</summary>
-  <img src="public/usuario.css" alt="Imagen Parcial 2">
+  <img src="public/parcial2.png" alt="Imagen Parcial 2">
 </details>
